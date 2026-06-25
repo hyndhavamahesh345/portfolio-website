@@ -1,0 +1,149 @@
+.work-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: transparent;
+  z-index: 2;
+}
+
+.work-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.work-flex {
+  display: flex;
+  height: 100%;
+  padding: 40px;
+  gap: 40px;
+  width: max-content;
+  align-items: center;
+}
+
+.work-box {
+  width: 600px;
+  height: 400px;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(242, 101, 34, 0.2);
+}
+
+.glass-panel-inner {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.work-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-index {
+  font-size: 3rem;
+  color: #f26522;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.work-name {
+  font-size: 1.8rem;
+  margin: 10px 0 5px 0;
+}
+
+.work-category {
+  font-size: 1rem;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.work-tools-title {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #f26522;
+}
+
+.work-tools-desc {
+  color: #dddddd;
+  font-size: 0.95rem;
+}
+
+.see-all-works {
+  text-align: center;
+  width: 100%;
+}
+
+.see-all-works h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.see-all-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #f26522, #e34a00);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.see-all-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(242, 101, 34, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .work-box {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-section {
+    height: auto;
+    display: block;
+    padding: 40px 5%;
+  }
+  
+  .work-container {
+    height: auto;
+  }
+
+  .work-flex {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .work-box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,82 @@
+.whatIDO-wow {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.what-grid-wow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+  perspective: 1000px;
+}
+
+.what-card-wow {
+  padding: 30px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.what-card-wow:hover {
+  transform: translateY(-15px) scale(1.02) rotateX(5deg);
+  box-shadow: 0 15px 35px rgba(138, 43, 226, 0.2);
+  border-color: rgba(138, 43, 226, 0.5);
+}
+
+.what-card-inner {
+  transform: translateZ(30px);
+}
+
+.what-card-wow h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+  color: #f26522;
+}
+
+.what-card-wow h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+}
+
+.what-card-wow p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #bbbbbb;
+  margin: 0 0 20px 0;
+}
+
+.what-card-wow h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.what-tags-container-wow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.what-tag-wow {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .what-grid-wow {
+    grid-template-columns: 1fr;
+  }
+}

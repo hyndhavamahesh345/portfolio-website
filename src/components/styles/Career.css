@@ -1,0 +1,117 @@
+.career-section {
+  width: 100%;
+  padding: 100px 10%;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.career-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.career-container h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  text-align: center;
+  background: linear-gradient(90deg, #fff, #f26522);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.career-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+/* Timeline vertical line */
+.career-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(242, 101, 34, 1), rgba(138, 43, 226, 0.5));
+  z-index: 0;
+}
+
+.career-item {
+  position: relative;
+  padding: 30px;
+  margin-left: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.career-item::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -38px;
+  width: 16px;
+  height: 16px;
+  background: #f26522;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #f26522, 0 0 20px #f26522;
+  z-index: 1;
+}
+
+.career-item:hover {
+  transform: translateX(10px) translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(242, 101, 34, 0.2);
+  border-color: rgba(242, 101, 34, 0.5);
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.career-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.career-period {
+  font-size: 1rem;
+  color: #bbbbbb;
+  font-weight: 500;
+  background: rgba(255,255,255,0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.career-company {
+  font-size: 1.2rem;
+  color: #f26522;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.career-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dddddd;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .career-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

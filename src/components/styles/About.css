@@ -1,0 +1,76 @@
+.about-section {
+  width: 100%;
+  padding: 100px 10%;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.about-me .title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #fff, #f26522);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-me .para {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  color: #dddddd;
+  margin-bottom: 40px;
+}
+
+.achievements-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.achievements-section .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.achievements-list {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.achievements-list li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #bbbbbb;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.achievements-list li::before {
+  content: '✦';
+  position: absolute;
+  left: -25px;
+  color: #f26522;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+}

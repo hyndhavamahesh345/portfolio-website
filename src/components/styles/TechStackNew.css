@@ -1,0 +1,85 @@
+.techstack-section-wow {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10%;
+  box-sizing: border-box;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.techstack-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(242, 101, 34, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.techstack-content-wow {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.wow-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #fff, #f26522);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.techstack-grid-wow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  perspective: 1000px;
+}
+
+.techstack-item-wow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.techstack-item-wow:hover {
+  box-shadow: 0 10px 40px rgba(242, 101, 34, 0.3);
+  border-color: rgba(242, 101, 34, 0.5);
+}
+
+.tech-icon-wow {
+  width: 50px;
+  height: 50px;
+  transform: translateZ(30px); /* Pops out of the card in 3D */
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+}
+
+.tech-name-wow {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transform: translateZ(20px);
+}
